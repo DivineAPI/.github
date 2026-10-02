@@ -1,0 +1,38 @@
+name: Feature request
+description: Suggest an improvement to this repository's SDK, examples or docs.
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This form is for the code and docs in this repository. Requests about the API itself (new endpoints, plans, your account) go to [support.divineapi.com](https://support.divineapi.com).
+  - type: textarea
+    id: problem
+    attributes:
+      label: What are you trying to do?
+      description: The use case or problem, in a few sentences.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What would help?
+      description: The change you suggest (a new example, a helper method, a docs section) and how you would use it.
+    validations:
+      required: true
+  - type: input
+    id: endpoints
+    attributes:
+      label: Related endpoints
+      description: Any API paths this touches, from [developers.divineapi.com](https://developers.divineapi.com).
+  - type: dropdown
+    id: contribute
+    attributes:
+      label: Would you open a pull request for this?
+      options:
+        - "Yes"
+        - "Maybe, with some guidance"
+        - "No"
+    validations:
+      required: false
